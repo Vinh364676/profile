@@ -1,0 +1,86 @@
+@import "../../config.scss";
+
+.skill{
+    &__title{
+        text-align: start;
+    }
+    &__content{
+        max-width: 400px;
+    }
+    &__slide{
+       
+        max-height: 100px;
+        .slide__img{
+
+        }
+       
+    }
+}
+.slide{
+    max-width: 500px;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    @include mobile{
+        max-width: 300px;
+        margin-top: 40px;
+    }
+    &__container{
+        width: 253px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 17px;
+        background: #73F;
+        border-radius: 24px;
+        @include mobile{
+            width: 160px;
+            padding: 0;
+            height: 48px;
+            font-size: 15px;
+
+        }
+        
+    }
+    &__title{
+      
+        margin: 0;
+width: 100%;
+color: #fff;
+@include mobile{
+    font-size: 16px;
+}
+    }
+    &__desc{
+        color: #fff;
+        margin-top: 45px;
+    }
+}
+.slide__img{
+    width: 90%;
+    height: 90% !important;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 45px;
+    @include mobile{
+        margin-top: 40px;
+        width: 75%;
+        height: 75%;
+    }
+}
+.slick-arrow {
+    &::before{
+        font-size: 30px !important;
+        color: #73F !important;
+        @include mobile{
+            font-size: 25px !important;
+        }
+    }
+}
+.slick-prev,.slick-next{
+    @include mobile{
+        right: 0 !important;
+    }
+}

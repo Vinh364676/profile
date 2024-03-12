@@ -1,0 +1,164 @@
+@import "../../config.scss";
+.contact {
+    &__title {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 70.588% */
+        letter-spacing: 0.38px;
+        margin-top: 75px;
+        margin-bottom: 24px;
+        @include mobile{
+            font-size: 20px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            
+        }
+    }
+    &__line {
+        height: 5px;
+        background-image: url("../../accset/image/contact__line.png");
+        width: 100%;
+        background-size: cover;
+        @include mobile{
+            background-size: contain;
+        }
+    }
+    &__content {
+        margin-top: 126px;
+        @include mobile{
+            margin-top: 45px;
+        }
+        .content_rectangle {
+            width: 349.168px;
+            height: 356px;
+            border-radius: 29px;
+            background: linear-gradient(320deg, #232732 14.78%, #232732 95.73%);
+            box-shadow:
+                25px 25px 60px 0px rgba(0, 0, 0, 0.25),
+                -25px -25px 60px 0px rgba(255, 255, 255, 0.25);
+                animation: zoomContinuous 3s infinite alternate;
+            &__image {
+                margin: 0 59px;
+                margin-top: 10px;
+                height: 100%;
+                background-image: url("../../accset/image/image-removebg-preview\ \(30\)\ 1.svg");
+                background-size: cover;
+            }
+        }
+        @keyframes zoomContinuous {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__form {
+        .ant-form-item {
+            margin-bottom: 33px;
+        }
+        &__input {
+            height: 69px;
+            background: #232732;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 20px;
+            border: none;
+            box-shadow:
+                4px 4px 10px 0px rgba(26, 28, 37, 0.9) inset,
+                -4px -4px 8px 0px rgba(44, 50, 64, 0.9) inset,
+                4px -4px 8px 0px rgba(26, 28, 37, 0.2) inset,
+                -4px 4px 8px 0px rgba(26, 28, 37, 0.2) inset,
+                -1px -1px 2px 0px rgba(26, 28, 37, 0.5),
+                1px 1px 2px 0px rgba(44, 50, 64, 0.3);
+            border-radius: 16px;
+            &:hover {
+                border-color: initial; /* hoặc một giá trị khác tùy thuộc vào thiết kế của bạn */
+                box-shadow:
+                    25px 25px 60px 0px rgba(0, 0, 0, 0.25),
+                    -25px -25px 60px 0px rgba(255, 255, 255, 0.25);
+                background: #232732;
+            }
+            &:focus {
+                box-shadow:
+                    4px 4px 10px 0px rgba(26, 28, 37, 0.9) inset,
+                    -4px -4px 8px 0px rgba(44, 50, 64, 0.9) inset,
+                    4px -4px 8px 0px rgba(26, 28, 37, 0.2) inset,
+                    -4px 4px 8px 0px rgba(26, 28, 37, 0.2) inset,
+                    -1px -1px 2px 0px rgba(26, 28, 37, 0.5),
+                    1px 1px 2px 0px rgba(44, 50, 64, 0.3);
+
+                background: #232732;
+            }
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.5);
+
+                font-family: Poppins;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; /* 109.091% */
+                letter-spacing: 0.38px;
+                @include mobile{
+                    font-size: 18px;
+                }
+            }
+            @include mobile{
+                height: 55px;
+                padding: 15px;
+            }
+            &__textarea {
+                height: 170px !important;
+            }
+        }
+        &__button {
+            width: 153px;
+            height: 56px;
+            border-radius: 24px;
+            background-color: #232732;
+            box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25), -10px -10px 20px 0px rgba(255, 255, 255, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            &:hover{
+                background: none !important;
+                box-shadow:
+                25px 25px 60px 0px rgba(0, 0, 0, 0.25),
+                -25px -25px 60px 0px rgba(255, 255, 255, 0.25);
+                span{
+                    color: #73f !important;
+                }
+                
+            }
+            @include mobile{
+                height: 48px;
+            }
+            span {
+                color: #fff;
+                width: 100%;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px; /* 120% */
+                letter-spacing: 0.38px;
+                display: flex;
+                justify-content: center;
+                @include mobile{
+                    font-size: 16px;
+                }
+                
+            }
+        }
+    }
+}
+:where(.css-dev-only-do-not-override-1uweeqc).ant-input-outlined.ant-input-status-error:not(.ant-input-disabled){
+    background: none !important;
+}
